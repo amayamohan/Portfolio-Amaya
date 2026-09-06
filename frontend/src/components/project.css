@@ -1,0 +1,383 @@
+.projects-section {
+  position: relative;
+  padding: 7rem 2rem;
+  background:
+    radial-gradient(
+      circle at 50% 20%,
+      rgba(212, 175, 55, 0.045),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #070707 0%,
+      #0b0b0b 55%,
+      #11100d 100%
+    );
+  color: #f5f5f5;
+  overflow: hidden;
+}
+
+.projects-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.projects-heading {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.projects-label {
+  margin: 0 0 0.8rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: #d4af37;
+  text-transform: uppercase;
+}
+
+.projects-heading h2 {
+  margin: 0;
+  font-size: clamp(2.8rem, 5vw, 4.3rem);
+  font-weight: 500;
+  line-height: 1.1;
+  color: #f5f5f5;
+}
+
+.projects-heading h2 span {
+  font-size: 0.55em;
+  margin-left: 0.35rem;
+  color: #d4af37;
+  filter: drop-shadow(
+    0 0 8px rgba(212, 175, 55, 0.2)
+  );
+}
+
+.projects-line {
+  width: 65px;
+  height: 2px;
+  margin: 1.3rem auto 1rem;
+
+  background: linear-gradient(
+    90deg,
+    #9b7200,
+    #d4af37,
+    #f4d58d,
+    #d4af37,
+    #9b7200
+  );
+
+  box-shadow:
+    0 0 10px rgba(212, 175, 55, 0.18);
+}
+
+.projects-intro {
+  margin: 0;
+  color: #a9a9a9;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+}
+
+/* =========================
+   PROJECT GRID
+========================= */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  min-height: 390px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(22, 22, 22, 0.96),
+      rgba(10, 10, 10, 0.96)
+    );
+
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(212, 175, 55, 0.65);
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.45),
+    0 0 25px rgba(212, 175, 55, 0.07);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.project-image-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 390px;
+  overflow: hidden;
+  background: #111;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.035);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 2.2rem;
+}
+
+.project-category {
+  margin: 0 0 0.7rem;
+
+  font-size: 0.78rem;
+  font-weight: 500;
+
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+
+  color: #d4af37;
+}
+
+.project-content h3 {
+  margin: 0;
+
+  font-size: clamp(1.55rem, 2vw, 2.1rem);
+  font-weight: 600;
+
+  color: #f4d58d;
+
+  line-height: 1.2;
+}
+
+.project-description {
+  margin: 1.2rem 0 1.3rem;
+
+  color: #c7c7c7;
+
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+/* =========================
+   TAGS
+========================= */
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.project-tags span {
+  padding: 0.42rem 0.75rem;
+
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  border-radius: 30px;
+
+  background: rgba(212, 175, 55, 0.025);
+
+  color: #cfcfcf;
+
+  font-size: 0.72rem;
+  letter-spacing: 0.2px;
+
+  transition: all 0.3s ease;
+}
+
+.project-tags span:hover {
+  color: #f4d58d;
+  border-color: rgba(212, 175, 55, 0.65);
+
+  background: rgba(212, 175, 55, 0.05);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.project-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.7rem;
+
+  width: fit-content;
+
+  padding: 0.7rem 1.15rem;
+
+  border: 1px solid rgba(212, 175, 55, 0.75);
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #f4d58d;
+
+  text-decoration: none;
+
+  font-size: 0.84rem;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.project-button svg {
+  font-size: 0.72rem;
+  transition: transform 0.3s ease;
+}
+
+.project-button:hover {
+  color: #080808;
+
+  background: linear-gradient(
+    135deg,
+    #b58a18,
+    #d4af37,
+    #f4d58d
+  );
+
+  border-color: #d4af37;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(212, 175, 55, 0.16);
+}
+
+.project-button:hover svg {
+  transform: translate(2px, -2px);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .projects-section {
+    padding: 5rem 1.2rem;
+  }
+
+  .projects-heading {
+    margin-bottom: 2.5rem;
+  }
+
+  .projects-heading h2 {
+    font-size: 2.7rem;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .project-image-wrapper {
+    height: 260px;
+    min-height: 260px;
+  }
+
+  .project-content {
+    padding: 1.6rem;
+  }
+
+  .project-content h3 {
+    font-size: 1.55rem;
+  }
+
+  .project-description {
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 430px) {
+
+  .projects-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .projects-heading h2 {
+    font-size: 2.4rem;
+  }
+
+  .project-image-wrapper {
+    height: 230px;
+    min-height: 230px;
+  }
+
+  .project-content {
+    padding: 1.4rem;
+  }
+
+  .project-tags span {
+    font-size: 0.68rem;
+  }
+}

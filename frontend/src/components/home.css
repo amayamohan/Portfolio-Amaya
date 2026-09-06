@@ -1,0 +1,434 @@
+/* =========================================
+   PREMIUM HOME
+   Deep Black + Champagne Gold
+========================================= */
+
+.home-section {
+  min-height: calc(100vh - 78px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(212, 175, 55, 0.07),
+      transparent 38%
+    ),
+    linear-gradient(
+      135deg,
+      #050505,
+      #0a0a0a,
+      #11100d
+    );
+
+  color: #f5f5f5;
+}
+
+
+/* Subtle premium gold glow */
+
+.home-section::before {
+  content: '';
+
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background: rgba(212, 175, 55, 0.025);
+
+  filter: blur(100px);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.home-content {
+  width: 100%;
+  max-width: 1000px;
+
+  padding: 5rem 2rem;
+
+  text-align: center;
+
+  position: relative;
+  z-index: 1;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.home-label {
+  margin-bottom: 1.5rem;
+
+  font-size: 0.8rem;
+
+  font-weight: 600;
+
+  letter-spacing: 4px;
+
+  color: #d4af37;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   MAIN HEADING
+========================================= */
+
+.home-section h1 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 7vw, 6rem);
+
+  font-weight: 500;
+
+  line-height: 1.05;
+
+  color: #f5f5f5;
+}
+
+
+/* =========================================
+   GOLD NAME
+========================================= */
+
+.text-highlight {
+  background: linear-gradient(
+    135deg,
+    #9b7200 0%,
+    #d4af37 25%,
+    #f4d58d 50%,
+    #d4af37 75%,
+    #9b7200 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+
+  font-weight: 750;
+
+  filter:
+    drop-shadow(
+      0 0 14px rgba(212, 175, 55, 0.22)
+    );
+}
+
+
+/* =========================================
+   DEGREE
+========================================= */
+
+.home-section h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.4rem;
+
+  font-size: 1.5rem;
+
+  font-weight: 500;
+
+  color: #f4d58d;
+}
+
+
+/* =========================================
+   PROFESSIONAL TITLE
+========================================= */
+
+.home-section h3 {
+  margin: 0;
+
+  font-size: 1.8rem;
+
+  font-weight: 600;
+
+  color: #f5f5f5;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.home-description {
+  max-width: 700px;
+
+  margin: 1.5rem auto 0;
+
+  font-size: 1.1rem;
+
+  line-height: 1.8;
+
+  color: #d0d0d0;
+}
+
+
+/* =========================================
+   FOCUS TAGS
+========================================= */
+
+.home-focus {
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 0.7rem;
+
+  margin-top: 1.5rem;
+}
+
+.home-focus span {
+  padding: 0.45rem 0.9rem;
+
+  border: 1px solid rgba(212, 175, 55, 0.3);
+
+  border-radius: 30px;
+
+  background: rgba(212, 175, 55, 0.025);
+
+  color: #d8d8d8;
+
+  font-size: 0.82rem;
+
+  transition: all 0.3s ease;
+}
+
+.home-focus span:hover {
+  color: #f4d58d;
+
+  border-color: rgba(212, 175, 55, 0.75);
+
+  box-shadow:
+    0 0 15px rgba(212, 175, 55, 0.12);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.home-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 1rem;
+
+  margin-top: 2.2rem;
+
+  flex-wrap: wrap;
+}
+
+
+.primary-button,
+.secondary-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 155px;
+
+  padding: 0.8rem 1.5rem;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-size: 0.92rem;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+
+/* Primary button */
+
+.primary-button {
+  background: linear-gradient(
+    135deg,
+    #a67c00,
+    #d4af37,
+    #f4d58d
+  );
+
+  color: #080808;
+
+  box-shadow:
+    0 0 22px rgba(212, 175, 55, 0.12);
+}
+
+.primary-button:hover {
+  color: #050505;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 28px rgba(212, 175, 55, 0.25);
+}
+
+
+/* Secondary button */
+
+.secondary-button {
+  background: transparent;
+
+  border: 1px solid rgba(244, 213, 141, 0.55);
+
+  color: #f4d58d;
+}
+
+.secondary-button:hover {
+  color: #f4d58d;
+
+  border-color: #d4af37;
+
+  background: rgba(212, 175, 55, 0.05);
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 18px rgba(212, 175, 55, 0.12);
+}
+
+
+/* =========================================
+   SOCIAL LINKS
+========================================= */
+
+.home-socials {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 0.8rem;
+
+  margin-top: 1.5rem;
+}
+
+
+.home-socials a {
+  color: #cfcfcf;
+
+  text-decoration: none;
+
+  font-size: 0.9rem;
+
+  transition: all 0.3s ease;
+}
+
+
+.home-socials a:hover {
+  color: #f4d58d;
+
+  text-shadow:
+    0 0 8px rgba(212, 175, 55, 0.25);
+}
+
+
+.home-socials span {
+  color: #8f6b00;
+}
+
+
+/* =========================================
+   AVAILABILITY
+========================================= */
+
+.availability {
+  margin-top: 1.7rem;
+
+  font-size: 0.78rem;
+
+  color: #888;
+
+  letter-spacing: 0.4px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .home-content {
+    padding: 4rem 1.5rem;
+  }
+
+  .home-label {
+    font-size: 0.68rem;
+
+    letter-spacing: 2.5px;
+  }
+
+  .home-section h1 {
+    font-size: 3.3rem;
+  }
+
+  .home-section h2 {
+    font-size: 1.25rem;
+  }
+
+  .home-section h3 {
+    font-size: 1.4rem;
+  }
+
+  .home-description {
+    font-size: 1rem;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .primary-button,
+  .secondary-button {
+    width: 100%;
+
+    max-width: 260px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .home-section h1 {
+    font-size: 2.7rem;
+  }
+
+  .home-focus span {
+    font-size: 0.75rem;
+  }
+}
