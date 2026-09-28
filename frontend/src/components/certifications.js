@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  FaBrain,
-  FaCloud,
-  FaCode,
-  FaChartBar,
-  FaCalendarAlt,
-  FaExternalLinkAlt
-} from 'react-icons/fa';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 import './certifications.css';
 
